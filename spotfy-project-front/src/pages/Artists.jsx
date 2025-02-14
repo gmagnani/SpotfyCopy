@@ -1,8 +1,9 @@
 import   'react'
+import Main from '../components/Main'
 
 function Artists() {
   return (
-    <div>Artists</div>
+    <Main type="artists"/>
   )
 }
 

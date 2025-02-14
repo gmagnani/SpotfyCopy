@@ -1,8 +1,9 @@
 import 'react'
+import Main from '../components/Main'
 
 function Songs() {
   return (
-    <div>Songs</div>
+    <Main type="songs"/>
   )
 }
 
