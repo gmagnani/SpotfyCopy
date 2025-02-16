@@ -10,12 +10,12 @@ import {songsArray} from '../assets/database/songs'
 function Artist() {
   const { id } = useParams();
 
-  const {name, banner} = artistArray.filter((currentArtist) => currentArtist.id === Number(id))[0];
+  const {name, banner} = artistArray.filter((currentArtist) => currentArtist._id === id)[0];
 
   const songsList = songsArray.filter((song) => song.artist === name);
 
   const randonIndex = Math.floor(Math.random() * (songsList.length -1));
-  const randonIdFromArtist = songsList[randonIndex].id;
+  const randonIdFromArtist = songsList[randonIndex]._id;
 
   return (
     <div className="artist">
